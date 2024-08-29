@@ -1,0 +1,12 @@
+go mod tidy
+go run main.go
+
+# for live reload
+go install github.com/air-verse/air@latest
+air init
+air
+
+go mod vendor
+go get github.com/lib/pq
+
+go get github.com/go-playground/validator/v10
